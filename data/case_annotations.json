@@ -1,0 +1,249 @@
+{
+  "label_definitions": {
+    "ON": "sub-problem queries address the described difficulty in the right scientific sense",
+    "PARTIAL": "right field, but a different facet or a mis-framing of the difficulty",
+    "DRIFT": "plausible-sounding queries in the wrong field or the wrong sense of a term",
+    "FILLER": "generic boilerplate or literal template placeholders not tied to the description"
+  },
+  "protocol": "Single annotator, by reading the stored LLM-generated query lists; one label per sub-problem (a group of 3 queries). Only the 15 stored disagreement records (13 distinct examples) were annotated; these are not a random sample.",
+  "cases": [
+    {
+      "id": "C1",
+      "gold_title": "Finite-size scaling above the upper critical dimension",
+      "n_queries": 9,
+      "group_labels": [
+        "DRIFT",
+        "DRIFT",
+        "ON"
+      ],
+      "group_notes": [
+        "'neat pattern' read literally as data visualisation",
+        "hallucinated surveying/lidar measurement topic",
+        "system-size scaling (correct sense)"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C2",
+      "gold_title": "The Gamma-Ray Window to Intergalactic Magnetism",
+      "n_queries": 9,
+      "group_labels": [
+        "PARTIAL",
+        "ON",
+        "ON"
+      ],
+      "group_notes": [
+        "noise removal framing instead of field inference",
+        "photon propagation in intergalactic fields",
+        "magnetic-field detection in astronomical data"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "win"
+      }
+    },
+    {
+      "id": "C3",
+      "gold_title": "Fabrication and some properties of biaxially aligned Sr0.6K0.4Fe2As2 superconductors by processing in high magnetic field",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "PARTIAL",
+        "ON"
+      ],
+      "group_notes": [
+        "crystal alignment",
+        "dopant/Tc facet not asked about",
+        "field-induced orientation"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C4",
+      "gold_title": "High sensitivity HI image of diffuse gas and new tidal features in M51 observed by FAST",
+      "n_queries": 9,
+      "group_labels": [
+        "DRIFT",
+        "ON",
+        "PARTIAL"
+      ],
+      "group_notes": [
+        "atmospheric gas dispersion",
+        "gas in interacting galaxies/tidal tails",
+        "cosmological gas origin instead of observation"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C5",
+      "gold_title": "Finite Element Analysis of Strain Effects on Electronic and Transport Properties in Quantum Dots and Wires",
+      "n_queries": 12,
+      "group_labels": [
+        "ON",
+        "ON",
+        "DRIFT",
+        "FILLER"
+      ],
+      "group_notes": [
+        "strain modelling in semiconductors",
+        "strain and electron transport",
+        "hallucinated soil-moisture / crop-yield / water-quality ML",
+        "literal template placeholders '[specific field/area]'"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "loss"
+      }
+    },
+    {
+      "id": "C6",
+      "gold_title": "On elliptic Lax pairs and isomonodromic deformation systems for elliptic lattice equations",
+      "n_queries": 9,
+      "group_labels": [
+        "DRIFT",
+        "DRIFT",
+        "DRIFT"
+      ],
+      "group_notes": [
+        "'de-autonomise' read as adaptive systems",
+        "'compatibility conditions' read in systems-engineering sense",
+        "unrelated tensor algebra"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C7",
+      "gold_title": "Illuminating the darkness: More evidence from faint-star proper-motions for a cool and warm component to the local dark matter in the Galaxy",
+      "n_queries": 9,
+      "group_labels": [
+        "PARTIAL",
+        "ON",
+        "ON"
+      ],
+      "group_notes": [
+        "detection/astrometry rather than mass inference",
+        "faint-star mass budget",
+        "dark matter and low-mass star kinematics"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "win",
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C8",
+      "gold_title": "Radioactive Ion Beam Physics and Nuclear Astrophysics in China",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "ON",
+        "ON"
+      ],
+      "group_notes": [
+        "isotope production",
+        "unstable-nuclei beam techniques",
+        "nuclear astrophysics context"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "win",
+        "dense_minilm": "win"
+      }
+    },
+    {
+      "id": "C9",
+      "gold_title": "An integrated system built for small-molecule semiconductors via high-throughput approaches",
+      "n_queries": 9,
+      "group_labels": [
+        "PARTIAL",
+        "PARTIAL",
+        "PARTIAL"
+      ],
+      "group_notes": [
+        "solubility chemistry",
+        "organic-electronics compatibility",
+        "parallel chemical synthesis (high-throughput idea, wrong material class)"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C10",
+      "gold_title": "Discovery of Hidden Classes of Layered Electrides by Extensive High-throughput Materials Screening",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "PARTIAL",
+        "FILLER"
+      ],
+      "group_notes": [
+        "computational screening for exotic electronic structure",
+        "generic combinatorial optimisation",
+        "'proposed method' boilerplate unrelated to the problem"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "loss"
+      }
+    },
+    {
+      "id": "C11",
+      "gold_title": "Nickel Bubble Expansion in Type Ia Supernovae: Adiabatic Solutions",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "DRIFT",
+        "FILLER"
+      ],
+      "group_notes": [
+        "nickel dynamics in supernovae",
+        "chemical-explosive detonation sense",
+        "generic 'nickel energy effects modelling'"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "win"
+      }
+    },
+    {
+      "id": "C12",
+      "gold_title": "GASKAP -- A Galactic Spectral Line Survey with the Australian Square Kilometre Array Pathfinder",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "ON",
+        "ON"
+      ],
+      "group_notes": [
+        "disk-to-halo gas transport",
+        "signal-to-noise for gas emission",
+        "halo gas dynamics"
+      ],
+      "mediated_vs_direct": {
+        "dense_minilm": "win"
+      }
+    },
+    {
+      "id": "C13",
+      "gold_title": "Near-Field Radiative Heat Transfer between Metamaterials coated with Silicon Carbide Film",
+      "n_queries": 9,
+      "group_labels": [
+        "ON",
+        "FILLER",
+        "FILLER"
+      ],
+      "group_notes": [
+        "film-thickness dependence of heat transfer",
+        "generic hybrid-material boilerplate with placeholder",
+        "generic 'material pairing' boilerplate"
+      ],
+      "mediated_vs_direct": {
+        "bm25": "win"
+      }
+    }
+  ]
+}

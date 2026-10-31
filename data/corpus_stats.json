@@ -1,0 +1,26 @@
+{
+  "n_documents": 20000,
+  "n_domains": 8,
+  "domain_counts": {
+    "astro-ph": 5555,
+    "cond-mat": 5121,
+    "hep": 4323,
+    "physics": 1832,
+    "quant-ph": 1267,
+    "gr-qc": 1071,
+    "nucl": 601,
+    "nlin": 230
+  },
+  "abstract_chars": {
+    "mean": 951.9287,
+    "median": 891.5,
+    "min": 100,
+    "max": 2569
+  },
+  "abstract_words": {
+    "mean": 142.8612,
+    "median": 133.0
+  },
+  "source_dataset": "TimSchopf/arxiv_categories",
+  "random_seed": 42
+}

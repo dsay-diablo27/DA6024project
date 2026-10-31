@@ -1,0 +1,26 @@
+{
+  "model_name": "sentence-transformers/all-MiniLM-L6-v2",
+  "local_model_dir": "model",
+  "n_documents": 20000,
+  "embedding_dim": 384,
+  "dtype": "float32",
+  "normalized": true,
+  "max_seq_length": 256,
+  "batch_size": 64,
+  "device_used": "cuda",
+  "encode_seconds": 24.6,
+  "text_format": "<title>. <abstract>",
+  "row_alignment": "row i of embeddings == doc_id i in physics_corpus.csv",
+  "truncation_sample": {
+    "sample_size": 500,
+    "mean_tokens": 291.832,
+    "median_tokens": 291.5,
+    "max_tokens": 661,
+    "pct_exceeding_max_seq_length": 62.2
+  },
+  "norm_check": {
+    "min": 0.9999998807907104,
+    "max": 1.0000001192092896,
+    "mean": 1.0
+  }
+}

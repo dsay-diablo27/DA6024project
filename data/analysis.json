@@ -1,0 +1,460 @@
+{
+  "headline": {
+    "bm25": {
+      "direct": {
+        "hits": 4,
+        "n": 60,
+        "recall": 0.06666666666666667,
+        "ci95": [
+          0.02622827414319792,
+          0.15925579893767722
+        ]
+      },
+      "rewrite": {
+        "hits": 14,
+        "n": 60,
+        "recall": 0.23333333333333334,
+        "ci95": [
+          0.1443943161843107,
+          0.3543651134039202
+        ]
+      },
+      "mediated": {
+        "hits": 14,
+        "n": 60,
+        "recall": 0.23333333333333334,
+        "ci95": [
+          0.1443943161843107,
+          0.3543651134039202
+        ]
+      }
+    },
+    "dense_minilm": {
+      "direct": {
+        "hits": 21,
+        "n": 60,
+        "recall": 0.35,
+        "ci95": [
+          0.24167601723815488,
+          0.4763761619052249
+        ]
+      },
+      "rewrite": {
+        "hits": 17,
+        "n": 60,
+        "recall": 0.2833333333333333,
+        "ci95": [
+          0.1850667860430859,
+          0.40767525049735165
+        ]
+      },
+      "mediated": {
+        "hits": 17,
+        "n": 60,
+        "recall": 0.2833333333333333,
+        "ci95": [
+          0.1850667860430859,
+          0.40767525049735165
+        ]
+      }
+    }
+  },
+  "paired_mediated_vs_direct": {
+    "exact": true,
+    "n_completions": 1,
+    "bm25": {
+      "mediated_wins": 11,
+      "mediated_losses": 1,
+      "ties": 48,
+      "mcnemar_p": 0.00634765625
+    },
+    "dense_minilm": {
+      "mediated_wins": 3,
+      "mediated_losses": 7,
+      "ties": 50,
+      "mcnemar_p": 0.34375
+    }
+  },
+  "taxonomy": {
+    "n_cases": 13,
+    "n_groups": 40,
+    "counts": {
+      "DRIFT": 8,
+      "ON": 19,
+      "PARTIAL": 8,
+      "FILLER": 5
+    },
+    "share": {
+      "DRIFT": 0.2,
+      "ON": 0.475,
+      "PARTIAL": 0.2,
+      "FILLER": 0.125
+    },
+    "cases_with_drift_or_filler": 7,
+    "subproblem_count_distribution": {
+      "3": 12,
+      "4": 1
+    }
+  },
+  "bm25_direct": {
+    "n": 60,
+    "ranks": [
+      924,
+      191,
+      8737,
+      50,
+      8640,
+      13281,
+      2361,
+      2692,
+      4629,
+      7,
+      3711,
+      387,
+      694,
+      1547,
+      16475,
+      1022,
+      8,
+      19460,
+      3151,
+      40,
+      6705,
+      354,
+      9411,
+      80,
+      30,
+      8917,
+      10108,
+      4797,
+      2802,
+      15,
+      57,
+      1546,
+      10371,
+      19922,
+      1249,
+      10650,
+      6269,
+      6,
+      310,
+      4545,
+      19119,
+      2561,
+      18785,
+      288,
+      7260,
+      8377,
+      1557,
+      1,
+      1504,
+      2877,
+      6414,
+      14922,
+      15116,
+      2661,
+      664,
+      58,
+      2807,
+      2729,
+      4571,
+      1444
+    ],
+    "recall_at": {
+      "1": 1,
+      "5": 1,
+      "10": 4,
+      "50": 8,
+      "100": 11,
+      "500": 16,
+      "1000": 19
+    },
+    "median_rank": 2710.5,
+    "mean_reciprocal_rank": 0.027660452165964074,
+    "coverage_abstract": [
+      0.24,
+      0.19047619047619047,
+      0.18181818181818182,
+      0.1111111111111111,
+      0.03225806451612903,
+      0.06896551724137931,
+      0.10714285714285714,
+      0.15384615384615385,
+      0.08695652173913043,
+      0.17142857142857143,
+      0.058823529411764705,
+      0.3103448275862069,
+      0.2222222222222222,
+      0.19230769230769232,
+      0.05,
+      0.08695652173913043,
+      0.16666666666666666,
+      0.0,
+      0.04,
+      0.25,
+      0.045454545454545456,
+      0.1724137931034483,
+      0.058823529411764705,
+      0.22727272727272727,
+      0.36,
+      0.08695652173913043,
+      0.08695652173913043,
+      0.14814814814814814,
+      0.125,
+      0.125,
+      0.15625,
+      0.2,
+      0.10714285714285714,
+      0.045454545454545456,
+      0.21739130434782608,
+      0.15,
+      0.3333333333333333,
+      0.14814814814814814,
+      0.13043478260869565,
+      0.2,
+      0.0,
+      0.02564102564102564,
+      0.0,
+      0.16129032258064516,
+      0.19230769230769232,
+      0.14814814814814814,
+      0.18181818181818182,
+      0.20833333333333334,
+      0.0625,
+      0.12,
+      0.2222222222222222,
+      0.21052631578947367,
+      0.06896551724137931,
+      0.18181818181818182,
+      0.12,
+      0.19230769230769232,
+      0.047619047619047616,
+      0.21052631578947367,
+      0.07692307692307693,
+      0.23529411764705882
+    ],
+    "coverage_title": [
+      0.2857142857142857,
+      0.0,
+      0.1111111111111111,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.25,
+      0.09090909090909091,
+      0.0,
+      0.25,
+      0.14285714285714285,
+      0.0,
+      0.0,
+      0.14285714285714285,
+      0.0,
+      0.0,
+      0.14285714285714285,
+      0.0,
+      0.0,
+      0.2,
+      0.0,
+      0.0,
+      0.2222222222222222,
+      0.0,
+      0.0,
+      0.3333333333333333,
+      0.3333333333333333,
+      0.2857142857142857,
+      0.0,
+      0.18181818181818182,
+      0.0,
+      0.16666666666666666,
+      0.3333333333333333,
+      0.0,
+      0.2,
+      0.2222222222222222,
+      0.0,
+      0.2857142857142857,
+      0.0,
+      0.0,
+      0.0,
+      0.1111111111111111,
+      0.2,
+      0.2222222222222222,
+      0.0,
+      0.25,
+      0.3333333333333333,
+      0.125,
+      0.4,
+      0.25,
+      0.2857142857142857,
+      0.42857142857142855,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.0,
+      0.14285714285714285
+    ],
+    "mean_coverage_abstract": 0.14186244297240533,
+    "mean_coverage_title": 0.11549122174122174,
+    "max_coverage_title": 0.42857142857142855,
+    "spearman_coverage_vs_rank": -0.5132536815782163
+  },
+  "merge_check_bm25": {
+    "n_cases": 13,
+    "direct_hits": 1,
+    "hit_count_hits": 5,
+    "rrf_hits": 5,
+    "mean_top1_share_of_merged_top10": 0.5153846153846154,
+    "rows": [
+      {
+        "gold_title": "Finite-size scaling above the upper critical dimension",
+        "n_queries": 9,
+        "queries_containing_gold": 0,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.8
+      },
+      {
+        "gold_title": "The Gamma-Ray Window to Intergalactic Magnetism",
+        "n_queries": 9,
+        "queries_containing_gold": 2,
+        "direct": 0,
+        "hit_count_merge": 1,
+        "rrf_merge": 1,
+        "top1_share_of_merged": 0.9
+      },
+      {
+        "gold_title": "Fabrication and some properties of biaxially aligned Sr0.6K0.4Fe2As2 superconductors by processing in high magnetic field",
+        "n_queries": 9,
+        "queries_containing_gold": 1,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.8
+      },
+      {
+        "gold_title": "High sensitivity HI image of diffuse gas and new tidal features in M51 observed by FAST",
+        "n_queries": 9,
+        "queries_containing_gold": 1,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.3
+      },
+      {
+        "gold_title": "Finite Element Analysis of Strain Effects on Electronic and Transport Properties in Quantum Dots and Wires",
+        "n_queries": 12,
+        "queries_containing_gold": 1,
+        "direct": 1,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.3
+      },
+      {
+        "gold_title": "On elliptic Lax pairs and isomonodromic deformation systems for elliptic lattice equations",
+        "n_queries": 9,
+        "queries_containing_gold": 1,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.9
+      },
+      {
+        "gold_title": "Illuminating the darkness: More evidence from faint-star proper-motions for a cool and warm component to the local dark matter in the Galaxy",
+        "n_queries": 9,
+        "queries_containing_gold": 2,
+        "direct": 0,
+        "hit_count_merge": 1,
+        "rrf_merge": 1,
+        "top1_share_of_merged": 0.3
+      },
+      {
+        "gold_title": "Radioactive Ion Beam Physics and Nuclear Astrophysics in China",
+        "n_queries": 9,
+        "queries_containing_gold": 3,
+        "direct": 0,
+        "hit_count_merge": 1,
+        "rrf_merge": 1,
+        "top1_share_of_merged": 0.4
+      },
+      {
+        "gold_title": "An integrated system built for small-molecule semiconductors via high-throughput approaches",
+        "n_queries": 9,
+        "queries_containing_gold": 1,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.2
+      },
+      {
+        "gold_title": "Discovery of Hidden Classes of Layered Electrides by Extensive High-throughput Materials Screening",
+        "n_queries": 9,
+        "queries_containing_gold": 0,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.5
+      },
+      {
+        "gold_title": "Nickel Bubble Expansion in Type Ia Supernovae: Adiabatic Solutions",
+        "n_queries": 9,
+        "queries_containing_gold": 9,
+        "direct": 0,
+        "hit_count_merge": 1,
+        "rrf_merge": 1,
+        "top1_share_of_merged": 0.5
+      },
+      {
+        "gold_title": "GASKAP -- A Galactic Spectral Line Survey with the Australian Square Kilometre Array Pathfinder",
+        "n_queries": 9,
+        "queries_containing_gold": 0,
+        "direct": 0,
+        "hit_count_merge": 0,
+        "rrf_merge": 0,
+        "top1_share_of_merged": 0.5
+      },
+      {
+        "gold_title": "Near-Field Radiative Heat Transfer between Metamaterials coated with Silicon Carbide Film",
+        "n_queries": 9,
+        "queries_containing_gold": 3,
+        "direct": 0,
+        "hit_count_merge": 1,
+        "rrf_merge": 1,
+        "top1_share_of_merged": 0.3
+      }
+    ]
+  },
+  "knn_purity_minilm": {
+    "k": 10,
+    "mean_purity": 0.8064549999999999,
+    "per_domain": {
+      "astro-ph": 0.9346714671467148,
+      "cond-mat": 0.8826205819175942,
+      "gr-qc": 0.5604108309990663,
+      "hep": 0.8315752949340736,
+      "nlin": 0.41826086956521735,
+      "nucl": 0.5638935108153078,
+      "physics": 0.4795305676855895,
+      "quant-ph": 0.7169692186266772
+    }
+  },
+  "eval_set": {
+    "n": 60,
+    "words_mean": 76.26666666666667,
+    "words_min": 51,
+    "words_max": 105,
+    "mention_paper": 10,
+    "gold_domain_counts": {
+      "hep": 15,
+      "astro-ph": 13,
+      "cond-mat": 12,
+      "quant-ph": 6,
+      "nucl": 5,
+      "physics": 5,
+      "gr-qc": 3,
+      "nlin": 1
+    }
+  }
+}
